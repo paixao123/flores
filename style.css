@@ -1,0 +1,106 @@
+  
+
+/* style.css - Tema fofo com flores azuis */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url('https://i.imgur.com/QSEF5wl.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(25, 83, 191);
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    color: rgb(231, 230, 237);
+    text-shadow: 1px 1px 3px rgba(240, 240, 246, 0.6);
+}
+
+.container {
+    background: rgba(167, 26, 206, 0.948);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 100, 0.5);
+}
+
+button {
+    background-color: #87CEFA;
+    border: none;
+    color: rgb(29, 53, 175);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 100, 0.3);
+}
+
+button:hover {
+    background-color: #00BFFF;
+}
+
+/* Adiciona um toque floral com um detalhe de flores no canto */
+body::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: url('https://i.imgur.com/Al6dOeR.png') no-repeat;
+    background-size: contain;
+    opacity: 0.7;
+    z-index: 0;
+}
+/* Fundo geral */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #063c51; /* azul céu */
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Estilo das flores */
+.flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Red_flower_icon.svg/512px-Red_flower_icon.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 10s linear infinite, spin 20s linear infinite;
+    opacity: 0.9;
+}
+
+/* Animação de flutuação */
+@keyframes float {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
