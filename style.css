@@ -6,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: url('https://i.imgur.com/QSEF5wl.jpg') no-repeat center center fixed;
+    /*background: url('https://i.imgur.com/QSEF5wl.jpg') no-repeat center center fixed;*/
+    background-color: rgb(37, 150, 190);
     background-size: cover;
     color: rgb(25, 83, 191);
     text-align: center;
